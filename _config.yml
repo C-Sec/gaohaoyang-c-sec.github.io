@@ -30,7 +30,8 @@ description_footer: Welcome to my blog
 #   comments: true
 # If you would like to disable them, then add
 #   comments: false
-disqus_shortname: c-sec-ru
+disqus:
+  shortname: c-sec-ru
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
@@ -59,3 +60,7 @@ excerpt_separator: "\n\n\n\n"
 # paginate
 gems: [jekyll-paginate]
 paginate: 6
+
+
+sass:
+  sass_dir: _sass
