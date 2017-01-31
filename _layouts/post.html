@@ -42,7 +42,7 @@ layout: default
                 {% for thisTag in page.tags %}
                     {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                         {% if hasSimilar.size == 0 %}
-                        <h2 id="similar_posts">Similar Posts</h2>
+                        <h2 id="similar_posts">Похожие статьи</h2>
                         <ul>
                         {% endif %}
                         <li class="relatedPost">
@@ -65,7 +65,7 @@ layout: default
         {% include previousAndNext.html %}
 
         {% if page.comments != false %}
-          <h2 id="comments">Comments</h2>
+          <h2 id="comments">Комментарии</h2>
           {% include comments.html %}
         {% endif %}
 
@@ -78,12 +78,12 @@ layout: default
             <!-- Content -->
             <div class="side content">
                 <div>
-                    Content
+                    Содержание
                 </div>
                 <ul id="content-side" class="content-ul">
-                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#similar_posts">Похожие статьи</a></li>
                     {% if page.comments != false %}
-                      <li><a href="#comments">Comments</a></li>
+                      <li><a href="#comments">Комментарии</a></li>
                     {% endif %}
                 </ul>
             </div>
