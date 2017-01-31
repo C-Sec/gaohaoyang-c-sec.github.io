@@ -6,18 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Computer Security
-brief-intro: Блог о компьютерной безопасности и IT в целом
+title: Компьютерная безопасность
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://c-sec.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
-# other links
+# Contact links
 #twitter_username: gaohaoyang126
 #facebook_username: gaohaoyang.water
 github_username:  RAlexeev
-email: site@c-sec.ru
+email: admin@c-sec.ru
 #weibo_username: 3115521wh
 #zhihu_username: gaohaoyang
 #linkedIn_username: gaohaoyang
@@ -33,12 +32,9 @@ vk_username: princer
 disqus:
   shortname: c-sec-ru
 
-# statistic analysis 统计代码
-# 百度统计 id，将统计代码替换为自己的百度统计id，即
-# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
-# xxxxx字符串
+# statistic analysis
 google_analytics_id: UA-91079618-1
-yandex_metrika_id: 42434714
+yandex_metrika_id: 42485424
 
 # Build settings
 markdown: kramdown
@@ -61,6 +57,7 @@ excerpt_separator: "\n\n\n\n"
 gems: [jekyll-paginate]
 paginate: 6
 
-
+# sass
 sass:
   sass_dir: _sass
+  style: compressed

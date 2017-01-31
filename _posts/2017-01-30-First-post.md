@@ -4,6 +4,7 @@ title:  "Мой первый пост"
 date:   2017-01-30 06:11:00
 categories: Test
 tags: Test
+author: RAlexeev
 ---
 
 * content
