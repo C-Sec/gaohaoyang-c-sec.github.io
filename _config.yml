@@ -7,7 +7,7 @@
 
 # Site settings
 title: Computer Security
-brief-intro: My blog about my computer security
+brief-intro: Блог о компьютерной безопасности и IT в целом
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://c-sec.github.io" # the base hostname & protocol for your site
 
@@ -23,7 +23,7 @@ email: site@c-sec.ru
 #linkedIn_username: gaohaoyang
 vk_username: princer
 
-description_footer: Welcome to my blog
+#description_footer: Welcome to my blog
 
 # comments
 # By default:
@@ -37,7 +37,7 @@ disqus:
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-google_analytics_id: UA-91079618-1 # google 分析追踪id
+google_analytics_id: UA-91079618-1
 yandex_metrika_id: 42434714
 
 # Build settings
