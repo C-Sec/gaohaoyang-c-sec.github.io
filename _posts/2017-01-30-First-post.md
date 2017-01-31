@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Мой первый пост"
-date:   2017-01-30 06:11:00
+title: Мой первый пост
+date: {}
 categories: Test
 tags: Test
 author: RAlexeev
+published: true
 ---
 
 * content
@@ -15,3 +16,16 @@ author: RAlexeev
 Всех рад видеть и слышать!
 
 Роман!
+
+
+: Sample grid table.
+
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+
