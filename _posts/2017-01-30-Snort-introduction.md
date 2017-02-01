@@ -38,6 +38,30 @@ Snort является сетевой системой обнаружения (I
 
 {% gist bwv988/d6fb77ae2ac3a8c146ba %}
 
+```js
+/**
+ * 获取剩余时间
+ * @param  {Number} endTime    截止时间
+ * @param  {Number} deviceTime 设备时间
+ * @param  {Number} serverTime 服务端时间
+ * @return {Object}            剩余时间对象
+ */
+let getRemainTime = (endTime, deviceTime, serverTime) => {
+    let t = endTime - Date.parse(new Date()) - serverTime + deviceTime
+    let seconds = Math.floor((t / 1000) % 60)
+    let minutes = Math.floor((t / 1000 / 60) % 60)
+    let hours = Math.floor((t / (1000 * 60 * 60)) % 24)
+    let days = Math.floor(t / (1000 * 60 * 60 * 24))
+    return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+    }
+}
+```
+
 * **Режиме анализа пакетов (Sniffer mode)** - Snort просто читает пакеты приходящие из сети и выводит их на экран.
 
   В этом режиме Snort действует просто как анализатор, показывая нефильтрованное содержимое среды передачи. Конечно, если вам требуется только анализатор, можно применить Tcpdump или Ethereal, однако данный режим позволяет убедиться, что все работает правильно и Snort видит пакеты.
